@@ -1,0 +1,98 @@
+/* Variables */
+:root{
+    --azulito: #2A7AE4;
+    --blanco: #FFFFFF;
+    --gris: #464646;
+    --grisáceo: #A2A2A2;
+    --hueso: #F5F5F5;
+}
+
+/* Globales */
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    margin: auto 15.2rem;
+}
+
+h1, h2, h3{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+}
+
+h1, h2{
+    color: var(--blanco);
+}
+
+h1{
+    font-size: 5.2rem;
+}
+
+h2{
+    font-size: 3.2rem;
+    color: var(--gris);
+}
+
+h3{
+    font-size: 2.2rem;
+}
+
+.flex{
+    display: flex;
+}
+
+/* Header */
+header{
+    justify-content: space-between;
+    height: 11.5rem;
+    align-items: center;
+}
+
+.busqueda-lupa{
+    margin-left: 3.2rem;
+    border-radius: 2rem;
+}
+
+.txt-busqueda{
+    width: 39.3rem;
+    padding-left: 1.6rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.txt-busqueda::placeholder{
+    color: var(--grisáceo);
+}
+
+.btn-lupa{
+    width: 3rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.txt-busqueda, .btn-lupa, .busqueda-lupa{
+    height: 4rem;
+    background: var(--hueso);
+    border: 0.1rem solid transparent;
+}
+
+.btn-lupa i{
+    color: var(--grisáceo);
+}
+
+.btn-login{
+    width: 182px;
+    height: 51px;
+    border: 1px solid var(--azulito);
+    background-color: var(--blanco);
+    color: var(--azulito);
+}
+
+.btn-login:hover{
+    background-color: var(--azulito);
+    color: var(--blanco);
+    cursor: pointer;
+}
