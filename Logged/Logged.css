@@ -1,0 +1,24 @@
+/* Header */
+.saludo{
+    align-items: center;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+.icon-user{
+    border: 0.1rem solid var(--azulito);
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: 1.4rem;
+    color: var(--azulito);
+}
+
+/* Productos */
+.total-productos{
+    padding: 3.2rem 0;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
