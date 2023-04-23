@@ -6,6 +6,7 @@
     --gris: #464646;
     --grisáceo: #A2A2A2;
     --hueso: #F5F5F5;
+    --blanco-celeste: #EAF2FD;
 }
 
 /* Globales */
@@ -18,7 +19,7 @@ body{
     margin: auto 15.2rem;
 }
 
-h1, h2, h3, h4, h5, a{
+h1, h2, h3, h4, h5, a, label{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -26,6 +27,12 @@ h1, h2, h3, h4, h5, a{
 
 h2, h4, h5{
     color: var(--gris);
+}
+
+button, input, textarea{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
 }
 
 h1{
@@ -41,7 +48,7 @@ h3{
     font-size: 2.2rem;
 }
 
-h4, a{
+h4, a, button, label{
     font-size: 1.6rem;
 }
 
@@ -54,8 +61,34 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
+.banner, footer{
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+}
+
 .flex{
     display: flex;
+}
+
+button{
+    width: 18rem;
+    padding: 1rem 2rem;
+    border: 0.1rem solid transparent;
+    background-color: var(--azulito);
+    color: var(--blanco);
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--celestoso);
 }
 
 /* Header */
@@ -89,10 +122,15 @@ header{
 
 
 .btn-lupa{
-    width: 3rem;
+    width: 4rem;
+    padding: 0 0.1rem 0 0.1rem;
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
     background-color: var(--grisáceo);
+}
+
+.btn-lupa:hover{
+    background-color: var(--celestoso);
 }
 
 .txt-busqueda:focus{
@@ -104,12 +142,10 @@ header{
 }
 
 .btn-login{
-    width: 18rem;
     height: 4rem;
     border: 0.1rem solid var(--azulito);
     background-color: var(--blanco);
     color: var(--azulito);
-    font-size: 1.6rem;
 }
 
 .btn-login:hover{
@@ -121,10 +157,6 @@ header{
 /* Banner */
 .banner{
     background-image: url(/img/banner.webp);
-    width: 100%;
-    box-sizing: border-box;
-    position: absolute;
-    left: 0;
     padding: 15rem 0 3.2rem 15.2rem;
 }
 
@@ -134,23 +166,6 @@ header{
 
 .banner h3{
     color: var(--blanco);
-}
-
-.btn-consolas{
-    padding: 1rem 2rem;
-    border: 0.1rem solid transparent;
-    background-color: var(--azulito);
-    color: var(--blanco);
-    font-size: 1.6rem;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.6rem;
-}
-
-.btn-consolas:hover{
-    cursor: pointer;
-    background-color: var(--celestoso);
 }
 
 /* Secciones */
@@ -178,9 +193,64 @@ header{
 }
 
 .foto-producto{
-    width: 176px;
-    height: 174px;
+    width: 17.6rem;
+    height: 17.4rem;
     box-sizing: border-box;
     border: 0.1rem solid var(--azulito);
     object-fit: contain;
+}
+
+/* Footer */
+footer{
+    justify-content: space-between;
+    gap: 11.2rem;
+    background-color: var(--blanco-celeste);
+    padding: 6.4rem 15.2rem;
+    box-sizing: border-box;
+}
+
+.logo-footer{
+    width: 17.6rem;
+    height: 5rem;
+}
+
+.links{
+    flex-direction: column;
+}
+
+.links *{
+    line-height: 4rem;
+    /* Para que no hayan saltos de linea en un elemento de texto */
+    white-space: nowrap; 
+}
+
+form{
+    width: 56.8rem;
+    flex-direction: column;
+}
+
+.nombre-usuario{
+    height: 3.5rem;
+}
+
+.mensaje{
+    height: 8.5rem;
+    padding-top: 1.6rem;
+    box-sizing: border-box;
+}
+
+form *{
+    margin-bottom: 1.6rem;
+}
+
+input, textarea{
+    padding-left: 1.2rem;
+}
+
+/* Copyright */
+.copyright{
+    padding: 40rem 0 3rem 0;
+    box-sizing: border-box;
+    padding-top: 40rem;
+    justify-content: center;
 }
