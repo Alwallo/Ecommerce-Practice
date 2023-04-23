@@ -18,10 +18,14 @@ body{
     margin: auto 15.2rem;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4, h5, a{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
+}
+
+h2, h4, h5{
+    color: var(--gris);
 }
 
 h1{
@@ -31,11 +35,23 @@ h1{
 
 h2{
     font-size: 3.2rem;
-    color: var(--gris);
 }
 
 h3{
     font-size: 2.2rem;
+}
+
+h4, a{
+    font-size: 1.6rem;
+}
+
+h5{
+    font-size: 1.4rem;
+}
+
+a{
+    color: var(--azulito);
+    text-decoration: none;
 }
 
 .flex{
@@ -65,20 +81,26 @@ header{
     color: var(--grisáceo);
 }
 
-.btn-lupa{
-    width: 3rem;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-}
-
 .txt-busqueda, .btn-lupa, .busqueda-lupa{
     height: 4rem;
     background: var(--hueso);
     border: 0.1rem solid transparent;
 }
 
+
+.btn-lupa{
+    width: 3rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: var(--grisáceo);
+}
+
+.txt-busqueda:focus{
+    outline: var(--gris) solid 0.1rem;
+}
+
 .btn-lupa i{
-    color: var(--grisáceo);
+    color: var(--blanco);
 }
 
 .btn-login{
@@ -98,13 +120,12 @@ header{
 
 /* Banner */
 .banner{
-    padding-top: 15rem;
     background-image: url(/img/banner.webp);
-    width: 144rem;
-    height: 20rem;
+    width: 100%;
+    box-sizing: border-box;
     position: absolute;
     left: 0;
-    padding-left: 15.2rem;
+    padding: 15rem 0 3.2rem 15.2rem;
 }
 
 .banner h1, .banner h3{
@@ -130,4 +151,36 @@ header{
 .btn-consolas:hover{
     cursor: pointer;
     background-color: var(--celestoso);
+}
+
+/* Secciones */
+.productos:first-of-type{
+    margin: 40.1rem 0 6.4rem 0;
+}
+
+.productos{
+    margin-bottom: 6.4rem;
+}
+
+.producto-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.6rem;
+    align-items: center;
+}
+
+.cards{
+    gap: 3rem;
+}
+
+.foto-producto, .nombre-producto, .precio{
+    margin-bottom: 0.8rem;
+}
+
+.foto-producto{
+    width: 176px;
+    height: 174px;
+    box-sizing: border-box;
+    border: 0.1rem solid var(--azulito);
+    object-fit: contain;
 }
