@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/index/index.css">
+    <link rel="stylesheet" href="/Login/Login.css">
+    <link rel="stylesheet" href="/ViewProduct/ViewProduct.css">
+    <title>Ver Producto</title>
+</head>
+<body>
+    <header class="flex">
+        <div class="flex logo-busqueda">
+            <img src="/img/Logo.webp" alt="logo" class="img-logo" onclick="location.href='/index/index.html'">
+            <div class="busqueda-lupa">
+                <input type="text" placeholder="¿Qué deseas buscar?" class="txt-busqueda"/>
+                <button class="btn-lupa">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <button class="btn-login" onclick="location.href='/Login/Login.html'">Login</button>
+    </header>
+    <main>
+        <section class="view-product flex">
+            <img src="/img/taza.webp" alt="" class="img-product">
+            <div>
+                <h1>Taza StromTrooper</h1>
+                <h3 class="precio">$60.00</h3>
+                <p>Esta taza de la colección de Star Wars contiene lorem ipsum dolor sit amet 
+                    consectetur, adipisicing elit. Deserunt cumque reprehenderit omnis placeat! 
+                    Laboriosam aut velit, modi nesciunt hic necessitatibus culpa. Inventore iusto 
+                    praesentium sed excepturi, nam corporis deserunt asperiores.</p>
+            </div>
+        </section>
+        <section class="productos">
+            <h2 class="producto-head">Productos Similares</h2>
+            <div class="flex cards">
+                <div class="producto-info">
+                    <img class="foto-producto" src="/img/vader.png" alt="">
+                    <h5 class="nombre-producto">Darth Vader</h5>
+                    <h4 class="precio">$170.00</h4>
+                    <a class="link-ver" href="#">Ver producto</a>
+                </div>
+                <div class="producto-info">
+                    <img class="foto-producto" src="/img/casco.png" alt="">
+                    <h5 class="nombre-producto">Cascos Darth Vader</h5>
+                    <h4 class="precio">$120.00</h4>
+                    <a class="link-ver" href="#">Ver producto</a>
+                </div>
+                <div class="producto-info">
+                    <img class="foto-producto" src="/img/yoda.png" alt="">
+                    <h5 class="nombre-producto">Yoda</h5>
+                    <h4 class="precio">$100.00</h4>
+                    <a class="link-ver" href="#">Ver producto</a>
+                </div>
+                <div class="producto-info">
+                    <img class="foto-producto" src="/img/storm.png" alt="">
+                    <h5 class="nombre-producto">StormTrooper</h5>
+                    <h4 class="precio">$110.00</h4>
+                    <a class="link-ver" href="#">Ver producto</a>
+                </div>
+                <div class="producto-info">
+                    <img class="foto-producto" src="/img/grogu.png" alt="">
+                    <h5 class="nombre-producto">Grogu</h5>
+                    <h4 class="precio">$90.00</h4>
+                    <a class="link-ver" href="#">Ver producto</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="flex foot">
+            <img src="/img/Logo.webp" alt="" class="logo-footer">
+            <div class="links flex">
+                <a href="">Quienes somos</a>
+                <a href="">Política de privacidad</a>
+                <a href="">Programa de fidelidad</a>
+                <a href="">Nuestras tiendas</a>
+                <a href="">Quiero ser franquiciado</a>
+                <a href="">Anuncie aquí</a>
+            </div>
+            <form class="flex">
+                <label>Hable con nosotros</label>
+                <input type="text", placeholder="Nombre" class="texto">
+                <textarea placeholder="Escribe tu mensaje" class="mensaje"></textarea>
+                <button>Enviar mensaje</button>
+            </form>
+        </section>
+        <section class="copyright flex">
+            <h4>Desarrollado por Alwallo</h4>
+            <h4>2023</h4>
+        </section>
+    </footer>
+    <script src="https://kit.fontawesome.com/c9b96bfd3b.js" crossorigin="anonymous"></script>
+</body>
+</html>

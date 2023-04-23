@@ -1,0 +1,27 @@
+/* Descripción del producto */
+.view-product{
+    padding-bottom: 6.4rem;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.img-product{
+    width: 150rem;
+}
+
+.view-product *{
+    color: var(--gris);
+}
+
+.precio{
+    margin: 0.8rem auto;
+}
+
+p{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    text-align: justify;
+}
