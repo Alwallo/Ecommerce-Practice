@@ -19,20 +19,26 @@ body{
     margin: auto 15.2rem;
 }
 
-h1, h2, h3, h4, h5, a, label{
+*{
     font-family: 'Raleway';
     font-style: normal;
+}
+
+*:hover{
+    cursor: default;
+}
+
+h1, h2, h3, h4, h5, a, label{
     font-weight: 700;
+}
+
+
+button, input, textarea{
+    font-weight: 500;
 }
 
 h2, h4, h5{
     color: var(--gris);
-}
-
-button, input, textarea{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
 }
 
 h1{
@@ -63,6 +69,7 @@ a{
 
 a:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .banner, footer{
@@ -89,6 +96,10 @@ button{
 button:hover{
     cursor: pointer;
     background-color: var(--celestoso);
+}
+
+input:hover, textarea:hover{
+    cursor: text;
 }
 
 /* Header */
@@ -201,7 +212,7 @@ header{
 }
 
 /* Footer */
-footer{
+.foot{
     justify-content: space-between;
     gap: 11.2rem;
     background-color: var(--blanco-celeste);
@@ -229,7 +240,7 @@ form{
     flex-direction: column;
 }
 
-.nombre-usuario{
+.texto{
     height: 3.5rem;
 }
 
@@ -243,14 +254,15 @@ form *{
     margin-bottom: 1.6rem;
 }
 
-input, textarea{
+.texto, textarea{
     padding-left: 1.2rem;
 }
 
 /* Copyright */
 .copyright{
-    padding: 40rem 0 3rem 0;
+    padding: 3rem 0;
     box-sizing: border-box;
-    padding-top: 40rem;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
 }

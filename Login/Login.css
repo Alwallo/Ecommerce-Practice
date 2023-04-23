@@ -1,0 +1,25 @@
+/* Header */
+.img-logo:hover{
+    cursor: pointer;
+}
+
+/* Form */
+.login{
+    justify-content: center;
+    padding: 9.2rem 0;
+}
+
+.login-form{
+    align-items: center;
+    border:0.2rem solid var(--blanco-celeste);
+    padding: 5.6rem;
+    box-sizing: border-box;
+}
+
+.login-form:hover{
+    background-color: var(--blanco-celeste);
+}
+
+.login-form>input{
+    width: 60%;
+}
