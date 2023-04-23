@@ -3,6 +3,7 @@
     align-items: center;
     gap: 1rem;
     box-sizing: border-box;
+    position: relative;
 }
 
 .icon-user{
@@ -11,6 +12,32 @@
     font-size: 2rem;
     padding: 1.4rem;
     color: var(--azulito);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0 1rem 1rem 0 var(--gris);
+    top: 5.2rem;
+    text-align: center;
+}
+
+.saludo:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    color: var(--gris);
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: var(--blanco);
+    background-color: var(--azulito);
 }
 
 /* Productos */
